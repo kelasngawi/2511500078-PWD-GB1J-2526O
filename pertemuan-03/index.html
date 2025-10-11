@@ -22,6 +22,38 @@
     margin-top: 0;
     margin-bottom: 16px;
   }
+
+  #about p {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 0;
+    padding: 6px;
+    border-bottom: 1px solid skyblue;
+  }
+
+  #about  strong {
+    min-width: 180px;
+    color: darkblue;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 16px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    #about p {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #about strong {
+      text-align: left;
+      padding-right: 0;
+      margin-bottom: 2px;
+    }
+    
+  }
 </style>
 </head>
 <body>
@@ -47,9 +79,9 @@
         <p><strong>TEMPAT LAHIR:</strong>Pangkalpinang</p>
         <p><strong>TANGGAL LAHIR:</strong>31 Mei 2005</p>
         <p><strong>HOBI:</strong>Membaca Buku &#x1F4DA;</p>
-        <p><strong>PASANGAN:</strong>Tidak ada &hearts;</p>
+        <p><strong>PASANGAN:</strong>Tidak ada &#x1F494;</p>
         <p><strong>PEKERJAAN:</strong>Tidak ada</p>
-        <p><strong>NAMA ORANG TUA:</strong>Bapak Sumarna dan Ibu Djuliani&#x2764;&#x1F468;</p>
+        <p><strong>NAMA ORANG TUA:</strong>Bapak Sumarna dan Ibu Djuliani&#x1F469;&#x2764;&#x1F468;</p>
         <p><strong>NAMA KAKAK:</strong>Juanda</p>
         <p><strong>NAMA ADIK:</strong>Tidak ada</p>
         <p>HTML digunakan untuk membuat struktur halaman web.</p>
