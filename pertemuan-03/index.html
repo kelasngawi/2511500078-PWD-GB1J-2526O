@@ -52,103 +52,88 @@
       padding-right: 0;
       margin-bottom: 2px;
     }
-     
+
   }
-
    #contact {
-      background: linear-gradient(180deg, #fffaf0, #fff3e0);
-      border-radius: 10px;
-      padding: 25px;
-      max-width: 700px;
-      margin: 40px auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
+    background-color: rgba(255, 228, 196, 0.8);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 2px 8px rgba(105, 170, 224, 0.677);
+   }
     #contact h2 {
-      color: darkorange;
+      color: rgb(53, 187, 174);
       text-align: left;
-      border-bottom: 2px solid darkorange;
+      border-bottom: 2px solid rgb(110, 203, 219);
       padding-bottom: 8px;
       margin-top: 0;
       margin-bottom: 20px;
     }
-
     #contact form {
-      display: flex start;
+      display: flex;
       flex-direction: column;
       gap: 14px;
+      max-width: 500px;
+      margin: auto;
     }
-
     #contact label {
       font-weight: 600;
-      color: #333;
-      margin-bottom: 4px;
+      color: rgb(138, 219, 132); 
     }
-
-    #contact input,
-    #contact textarea {
+    #contact input, #contact textarea {
       width: 100%;
       padding: 10px 12px;
       border: 1.5px solid #ccc;
       border-radius: 6px;
       font-size: 14px;
-      background-color: #fafafa;
+      background-color:(25, 255, 220)rgb;
       transition: all 0.3s ease;
     }
-
-    #contact input:focus,
-    #contact textarea:focus {
-      border-color: darkorange;
-      background-color: #fff;
+    #contact input:focus, #contact textarea:focus {
+      border-color: rgba(255, 163, 24, 0.516);
+      box-shadow: 0 0 5px rgba(255, 160, 36, 0.444);
       outline: none;
-      box-shadow: 0 0 5px rgba(255, 165, 0, 0.4);
+      border-color: darkorange;
     }
-
     #contact textarea {
-      min-height: 100px;
       resize: vertical;
+      min-height: 100px;
     }
-
     #contact button {
       width: 120px;
       padding: 10px;
       border: none;
       border-radius: 6px;
-      background-color: rgb(6, 59, 235);
+      background-color: darkorange;
       color: white;
-      font-weight: bold;
+      font-size: 16px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
-
-    #contact button[type="reset"] {
-      background-color: gray;
-    }
-
     #contact button:hover {
-      transform: scale(1.05);
-      background-color: orange;
+      background-color: orangered;
     }
-
-    #contact button[type="reset"]:hover {
-      background-color: #666;
-    }
+    #about, #contact {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
 
     @media (max-width: 600px) {
-    #contact {
-      padding: 20px;
-    }
-
-    #contact button {
-       width: 100%;
-    }
-    
+      #contact form {
+        max-width: 100%;
+      }
+      #contact button {
+        width: 100%;
+      }
     }
 </style>
 </head>
 <body>
   <header>
-    <h1>ini header</h1>
+    <h1>ini heidth:ader</h1>
     <nav>
         <ul>
             <li><a href="#home">Beranda</a></li>
