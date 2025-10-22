@@ -6,4 +6,5 @@ NAMA : Ade putra<br><br>
 Hari ini , kamis 09 oktober 2025, saya mempelajari:
 <ol>
   <li>copy paste isi index.html (pertemuan-03) ke index.html (pertemuan-04)</li>
+  <li>ganti internal css ke esternal css<li>
 <ol>
