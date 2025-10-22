@@ -30,6 +30,10 @@
     text-decoration: none;
     padding: 6px 12px;
   }
+  #home p {
+    text-align: justify;
+  }
+  #home,
  #about {
     background-color: moccasin;
     border-radius: 10px;
@@ -38,7 +42,7 @@
     margin: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
+  #home,
   #about h2 {
     color: darkorange;
     border-bottom: 2px solid darkorange;
