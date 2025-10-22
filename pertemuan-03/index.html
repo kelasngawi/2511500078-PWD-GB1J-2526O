@@ -121,19 +121,31 @@
   margin: 40px auto;
 }
 
-    @media (max-width: 600px) {
-      #contact form {
-        max-width: 100%;
-      }
-      #contact button {
-        width: 100%;
-      }
+    #contact form .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  @media (max-width: 600px) {
+    #contact {
+      padding: 20px;
     }
+    #contact form {
+      max-width: 100%;
+    }
+    #contact form .button-group {
+      flex-direction: column;
+    }
+    #contact button {
+      width: 100%;
+    }
+  }
 </style>
 </head>
 <body>
   <header>
-    <h1>ini heidth:ader</h1>
+    <h1>ini header</h1>
     <nav>
         <ul>
             <li><a href="#home">Beranda</a></li>
