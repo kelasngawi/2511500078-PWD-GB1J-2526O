@@ -30,6 +30,13 @@
     text-decoration: none;
     padding: 6px 12px;
   }
+  footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    
+  }
   #home p {
     text-align: justify;
   }
