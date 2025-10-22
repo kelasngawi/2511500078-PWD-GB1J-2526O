@@ -54,6 +54,15 @@ header li a:active {
   #home p {
     text-align: justify;
   }
+  @media (max-width: 600px) {
+    header {
+        padding: 16px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+  }
   #home,
  #about {
     background-color: moccasin;
