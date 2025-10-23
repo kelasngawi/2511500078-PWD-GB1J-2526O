@@ -51,7 +51,25 @@ header li a:active {
     background-color: #cc04a1;
     transform:translateY(1px)
   }
- 
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin: 8px 0 0;
+  }
+  header li a {
+    display: block;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,.35);
+    background: solid rgba(255,255,255,.08);
+    backdrop-filter: saturate(120%);
+  }
+
   @media (max-width: 600px) {
     header {
         padding: 16px;
@@ -66,7 +84,7 @@ header li a:active {
  }
  #home,
  #about {
-    background-color: darkorange;
+    background-color: moccasin;
     border-radius: 10px;
     padding: 20px;
     max-width: 700px;
