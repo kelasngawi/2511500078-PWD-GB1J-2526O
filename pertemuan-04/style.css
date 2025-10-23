@@ -198,7 +198,7 @@ header li a:active {
     #contact button:hover {
       background-color: orangered;
     }
-    #about, #contact {
+    #about, #contact, #home {
   width: 90%;
   max-width: 700px;
   margin: 40px auto;
