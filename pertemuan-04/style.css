@@ -63,9 +63,9 @@ header li a:active {
     }
 
   }
-  #home,
+ #home,
  #about {
-    background-color: #ffffff;
+    background-color: darkorange;
     border-radius: 10px;
     padding: 20px;
     max-width: 700px;
