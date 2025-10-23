@@ -51,9 +51,7 @@ header li a:active {
     background-color: #cc04a1;
     transform:translateY(1px)
   }
-  #home p {
-    text-align: justify;
-  }
+ 
   @media (max-width: 600px) {
     header {
         padding: 16px;
@@ -63,6 +61,9 @@ header li a:active {
     }
 
   }
+ #home p {
+   text-align: justify;
+ }
  #home,
  #about {
     background-color: darkorange;
