@@ -1,1 +1,7 @@
 # pertemuan-05
+NIM : 2511500078<br>
+NAMA : Ade putra<br><br>
+
+Hari ini , kamis 22 oktober 2025, saya mempelajari:
+<ol>
+  <li>copy paste index.html dan style.css dari folder pertemuan 04<li>
