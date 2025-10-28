@@ -239,7 +239,7 @@ header li a:active {
       left: 16px;
       top: 8px;
     }
-    nav ul {
+    nav  {
       display: none;
       flex-direction: column;
       background: #003366;
