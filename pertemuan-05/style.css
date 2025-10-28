@@ -239,6 +239,13 @@ header li a:active {
       left: 16px;
       top: 8px;
     }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #003366;
+      width: 100%;
+      padding: 5px 0;
+    }
   }
   @media (max-width: 600px) {}
     #contact input,
