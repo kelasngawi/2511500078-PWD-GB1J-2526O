@@ -224,6 +224,14 @@ header li a:active {
     flex-direction: column;
     gap: 10px;
   }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
   @media (max-width: 600px) {}
     #contact input,
     #contact textarea,
