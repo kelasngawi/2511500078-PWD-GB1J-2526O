@@ -246,6 +246,9 @@ header li a:active {
       width: 100%;
       padding: 5px 0;
     }
+    nav.active {
+      display: flex;
+    }
   }
   @media (max-width: 600px) {}
     #contact input,
