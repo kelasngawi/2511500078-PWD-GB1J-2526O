@@ -37,6 +37,14 @@
       <?php
        $nim = 2511500078;
        $nama = "Ade Putra";
+       $tempat_lahir = "Pangkalpinang";
+       $tanggal_lahir = "31 Mei 2005";
+       $hobi = "Membaca Buku";
+       $pasangan = "furina de fontaine";
+       $pekerjaan = "Tidak ada";
+       $nama_ortu = "Bapak Sumarna dan Ibu Djuliani";
+       $nama_kakak = "Juanda";
+       $nama_adik = "Tidak ada";
       ?>
         <h2>Tentang Saya &#128100;</h2>
         <p>
@@ -45,14 +53,14 @@
           ?>
         </p>
         <p><strong>NAMA:</strong><?php echo $nama; ?> &#128526;</p>
-        <p><strong>TEMPAT LAHIR:</strong>Pangkalpinang</p>
-        <p><strong>TANGGAL LAHIR:</strong>31 Mei 2005</p>
-        <p><strong>HOBI:</strong>Membaca Buku &#x1F4DA;</p>
-        <p><strong>PASANGAN:</strong>furina de fontaine &#128149;</p>
-        <p><strong>PEKERJAAN:</strong>Tidak ada</p>
-        <p><strong>NAMA ORANG TUA:</strong>Bapak Sumarna dan Ibu Djuliani&#x1F469;&#x2764;&#x1F468;</p>
-        <p><strong>NAMA KAKAK:</strong>Juanda</p>
-        <p><strong>NAMA ADIK:</strong>Tidak ada</p>
+        <p><strong>TEMPAT LAHIR:</strong><?php echo $tempat_lahir; ?></p>
+        <p><strong>TANGGAL LAHIR:</strong><?php echo $tanggal_lahir; ?></p>
+        <p><strong>HOBI:</strong><?php echo $hobi; ?> &#x1F4DA;</p>
+        <p><strong>PASANGAN:</strong><?php echo $pasangan; ?> &#128149;</p>
+        <p><strong>PEKERJAAN:</strong><?php echo $pekerjaan; ?></p>
+        <p><strong>NAMA ORANG TUA:</strong><?php echo $nama_ortu; ?> &#x1F469;&#x2764;&#x1F468;</p>
+        <p><strong>NAMA KAKAK:</strong><?php echo $nama_kakak; ?></p>
+        <p><strong>NAMA ADIK:</strong><?php echo $nama_adik; ?></p>
         
     </section>
     <section id="contact">
