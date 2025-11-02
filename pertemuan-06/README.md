@@ -7,4 +7,5 @@ NAMA : Ade putra<br>
 belajar sebagai berikut:
 <ol>
   <li>belajar skrip php hello world</li>
+  <li>copy index.html, style.css,script.css</li>
 </ol>
