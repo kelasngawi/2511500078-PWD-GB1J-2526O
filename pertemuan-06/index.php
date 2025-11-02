@@ -22,11 +22,17 @@
         </ul>
     </nav>
   </header>
+
   <main>
     <section id="home">
         <h2>selamat datang</h2>
         <p>ini contoh paragraf html</p>
+        <?php
+        echo "Halo, Dunia!";
+        echo "nama saya ade putra";
+        ?>
     </section>
+
     <section id="about">
         <h2>Tentang Saya &#128100;</h2>
         <p><strong>NIM:</strong>2511500078</p>
