@@ -41,10 +41,10 @@
        $tanggal_lahir = "31 Mei 2005";
        $hobi = "Membaca Buku";
        $pasangan = "furina de fontaine";
-       $pekerjaan = "Tidak ada";
+       $pekerjaan = "Pelajar/Mahasiswa";
        $nama_ortu = "Bapak Sumarna dan Ibu Djuliani";
        $nama_kakak = "Juanda";
-       $nama_adik = "Tidak ada";
+       $nama_adik = "-";
       ?>
         <h2>Tentang Saya &#128100;</h2>
         <p>
