@@ -35,7 +35,8 @@
 
     <section id="about">
       <?php
-       $nim = "2511500078";
+       $nim = 2511500078;
+       $nama = "Ade Putra";
       ?>
         <h2>Tentang Saya &#128100;</h2>
         <p>
@@ -43,7 +44,7 @@
           <?php echo $nim; 
           ?>
         </p>
-        <p><strong>NAMA:</strong>Ade Putra &#128526;</p>
+        <p><strong>NAMA:</strong><?php echo $nama; ?> &#128526;</p>
         <p><strong>TEMPAT LAHIR:</strong>Pangkalpinang</p>
         <p><strong>TANGGAL LAHIR:</strong>31 Mei 2005</p>
         <p><strong>HOBI:</strong>Membaca Buku &#x1F4DA;</p>
