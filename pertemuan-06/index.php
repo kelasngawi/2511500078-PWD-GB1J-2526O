@@ -34,8 +34,15 @@
     </section>
 
     <section id="about">
+      <?php
+       $nim = "2511500078";
+      ?>
         <h2>Tentang Saya &#128100;</h2>
-        <p><strong>NIM:</strong>2511500078</p>
+        <p>
+          <strong>NIM:</strong>
+          <?php echo $nim; 
+          ?>
+        </p>
         <p><strong>NAMA:</strong>Ade Putra &#128526;</p>
         <p><strong>TEMPAT LAHIR:</strong>Pangkalpinang</p>
         <p><strong>TANGGAL LAHIR:</strong>31 Mei 2005</p>
