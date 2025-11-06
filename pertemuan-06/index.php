@@ -172,7 +172,7 @@
     }
 
         $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
-        $totalSks = $sksmatakuliah1 + $sksmatakuliah2 + $sksmatakuliah3 + $sksmatakuliah4; + $sksmatakuliah5;
+        $totalSks = $sksmatakuliah1 + $sksmatakuliah2 + $sksmatakuliah3 + $sksmatakuliah4 + $sksmatakuliah5;
         $IPK = $totalSks > 0 ? $totalBobot / $totalSks : 0;
     
     ?>
