@@ -74,7 +74,7 @@
         $nilaiUTS1 = 75;
         $nilaiUAS1 = 88;
      $matakuliah2 = "Basis Data";
-        $sksmatakuliah2 = 4;
+        $sksmatakuliah2 = 2;
         $nilaimatakuliah2 = 90;
         $nilaiHadir2 = 85;
         $nilaiTugas2 = 80;
@@ -95,7 +95,7 @@
         $nilaiUTS4 = 76;
         $nilaiUAS4 = 89;
     $matakuliah5 = "Sistem Operasi";
-        $sksmatakuliah5 = 4;
+        $sksmatakuliah5 = 2;
         $nilaimatakuliah5 = 88;
         $nilaiHadir5 = 95;
         $nilaiTugas5 = 86;
