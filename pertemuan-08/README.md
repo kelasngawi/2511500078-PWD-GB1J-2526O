@@ -7,4 +7,5 @@ NAMA : Ade putra<br>
 Hari Ini Kmais uts sebagai berikut:
 <ol>
   <li>download+extract pertemuan 08</li>
+  <li>menginput file ke proses php<li>
 </ol>

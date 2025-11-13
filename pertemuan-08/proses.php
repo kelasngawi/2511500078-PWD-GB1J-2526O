@@ -10,8 +10,6 @@ session_start();
 ?>
 
 <?php
-session_start();
-$sesnim = $_POST["txtNIM"];
    $sesnama = $_POST["txtNama"];
    $sestempat_lahir = $_POST["txtTempat_lahir"];
    $sestanggal_lahir = $_POST["txtTanggal_lahir"];
@@ -21,10 +19,9 @@ $sesnim = $_POST["txtNIM"];
    $sesnama_ortu = $_POST["txtNama_Ortu"];
    $sesnama_kakak = $_POST["txtNama_Kakak"];
    $sesnama_adik = $_POST["txtNama_Adik"];
-   $_SESSION["sesNIM"] = $sesnim;
    $_SESSION["sesNama"] = $sesnama;
-   $_SESSION["Tempat_lahir"] = $sestempat_lahir;
-   $_SESSION["Tanggal_lahir"] = $sestanggal_lahir;
+   $_SESSION["sesTempat_Lahir"] = $sestempat_lahir;
+   $_SESSION["sesTanggal_Lahir"] = $sestanggal_lahir;
    $_SESSION["sesHobi"] = $seshobi;
    $_SESSION["sesPasangan"] = $sespasangan;
    $_SESSION["sesPekerjaan"] = $sespekerjaan;
