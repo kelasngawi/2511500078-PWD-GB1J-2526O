@@ -55,8 +55,8 @@ session_start();
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="Entry Data Mahasiswa"> 
-      <h2>Entry Data Mahasiswa</h2>
+    <section id="Biodata Data Mahasiswa"> 
+      <h2> Biodata Data Sederhana Mahasiswa</h2>
       <form action="proses.php" method="POST">
 
         <label for="txtNIM"><span>NIM:</span>

@@ -62,7 +62,7 @@ header li a:active {
 #home,
 #about,
 #contact,
-#Entry\ Data\ Mahasiswa  {
+#Biodata\ Data\ Mahasiswa  {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -74,7 +74,7 @@ header li a:active {
 #home h2,
 #about h2,
 #contact h2,
-#Entry\ Data\ Mahasiswa  h2 {
+#Biodata\ Data\ Mahasiswa  h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -88,7 +88,7 @@ header li a:active {
 
 #about p,
 #contact label,
-#Entry\ Data\ Mahasiswa  label {
+#Biodata\ Data\ Mahasiswa  label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -99,7 +99,7 @@ header li a:active {
 
 #about strong,
 #contact label>span,
-#Entry\ Data\ Mahasiswa  label>span {
+#Biodata\ Data\ Mahasiswa  label>span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -133,28 +133,28 @@ header li a:active {
 }
 
 #contact button[type="submit"],
-#Entry\ Data\ Mahasiswa  button[type="submit"] {
+#Biodata\ Data\ Mahasiswa  button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
 #contact button[type="reset"],
-#Entry\ Data\ Mahasiswa  button[type="reset"] {
+#Biodata\ Data\ Mahasiswa  button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
 #contact button[type="submit"]:hover,
-#Entry\ Data\ Mahasiswa  button[type="submit"]:hover {
+#Biodata\ Data\ Mahasiswa  button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #contact button[type="reset"]:hover,
-#Entry\ Data\ Mahasiswa  button[type="reset"]:hover {
+#Biodata\ Data\ Mahasiswa  button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);
 }
