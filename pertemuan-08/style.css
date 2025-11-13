@@ -61,8 +61,7 @@ header li a:active {
 
 #home,
 #about,
-#contact,
-#Entry\ Data\ Mahasiswa {
+#contact {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -73,8 +72,7 @@ header li a:active {
 
 #home h2,
 #about h2,
-#contact h2,
-#Entry\ Data\ Mahasiswa h2 {
+#contact h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -87,8 +85,7 @@ header li a:active {
 }
 
 #about p,
-#contact label,
-#entry\ data\ mahasiswa label {
+#contact label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -98,8 +95,7 @@ header li a:active {
 }
 
 #about strong,
-#contact label>span,
-#entry\ data\ mahasiswa label>span {
+#contact label>span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -132,29 +128,25 @@ header li a:active {
   margin-right: 8px;
 }
 
-#contact button[type="submit"],
-#entry\ data\ mahasiswa button[type="submit"] {
+#contact button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
-#contact button[type="reset"],
-#entry\ data\ mahasiswa button[type="reset"] {
+#contact button[type="reset"]{
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
-#contact button[type="submit"]:hover,
-#entry\ data\ mahasiswa button[type="submit"]:hover {
+#contact button[type="submit"]:hover{
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-#contact button[type="reset"]:hover,
-#entry\ data\ mahasiswa button[type="reset"]:hover {
+#contact button[type="reset"]:hover{
   background-color: #cccccc;
   transform: translateY(-1px);
 }
