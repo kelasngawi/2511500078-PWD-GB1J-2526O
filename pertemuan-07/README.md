@@ -9,4 +9,5 @@ Hari Ini Kmais 6 November belajar sebagai berikut:
   <li>download+extract pertemuan 07</li>
   <li>method dan action index.php</li>
   <li>buat file proses.php<li>
+  <li>ambil nilai input dari form ke proses.php<li>
 </ol>
