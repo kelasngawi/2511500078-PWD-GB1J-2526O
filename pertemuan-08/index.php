@@ -8,8 +8,8 @@ session_start();
   <?php
   $sesnim = $_SESSION["sesNIM"];
   $sesnama = $_SESSION["sesNama"];
-  $sestempat_lahir = $_SESSION["sesTempat_Lahir"];
-  $sestanggal_lahir = $_SESSION["sesTanggal_Lahir"];
+  $sestempat_lahir = $_SESSION["sesTempat_lahir"];
+  $sestanggal_lahir = $_SESSION["sesTanggal_lahir"];
   $seshobi = $_SESSION["sesHobi"];
   $sespasangan = $_SESSION["sesPasangan"];
   $sespekerjaan = $_SESSION["sesPekerjaan"];
@@ -64,38 +64,38 @@ session_start();
         </label>
 
         <label for="txtNama"><span>Nama Lengkap:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Lengkap" required autocomplete="name">
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama Lengkap" required autocomplete="nama">
         </label>
 
         <label for="txtTempat_lahir"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat_lahir" name="txtTempat_lahir" placeholder="Masukkan Tempat Lahir" required autocomplete="birthplace">
+          <input type="text" id="txtTempat_lahir" name="txtTempat_lahir" placeholder="Masukkan Tempat Lahir" required autocomplete="tempat lahir">
         </label>
 
         <label for="txtTanggal_lahir"><span>Tanggal Lahir:</span>
-          <input type="date" id="txtTanggal_lahir" name="txtTanggal_lahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="bday">
+          <input type="date" id="txtTanggal_lahir" name="txtTanggal_lahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="tanggal lahir">
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
-          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required autocomplete="hobby">
+          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required autocomplete="hobi">
         </label>
 
         <label for="txtPasangan"><span>Pasangan:</span>
-          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required autocomplete="partner">
+          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required autocomplete="pasangan">
         </label>
 
         <label for="txtPekerjaan"><span>Pekerjaan:</span>
-          <input type="text" id="txtPekerjaan" name="txtPekerjaan" placeholder="Masukkan Pekerjaan" required autocomplete="occupation">
+          <input type="text" id="txtPekerjaan" name="txtPekerjaan" placeholder="Masukkan Pekerjaan" required autocomplete="pekerjaan">
         </label>
 
         <label for="txtNama_Ortu"><span>Nama Orang Tua:</span>
-          <input type="text" id="txtNama_Ortu" name="txtNama_Ortu" placeholder="Masukkan Nama Orang Tua" required autocomplete="parent's name">
+          <input type="text" id="txtNama_Ortu" name="txtNama_Ortu" placeholder="Masukkan Nama Orang Tua" required autocomplete="nama_ortu">
         </label>
 
         <label for="txtNama_Kakak"><span>Nama Kakak:</span>
-          <input type="text" id="txtNama_Kakak" name="txtNama_Kakak" placeholder="Masukkan Nama Kakak" required autocomplete="sibling's name">
+          <input type="text" id="txtNama_Kakak" name="txtNama_Kakak" placeholder="Masukkan Nama Kakak" required autocomplete="nama_kakak">
         </label>
         <label for="txtNama_Adik"><span>Nama Adik:</span>
-          <input type="text" id="txtNama_Adik" name="txtNama_Adik" placeholder="Masukkan Nama Adik" required autocomplete="sibling's name">
+          <input type="text" id="txtNama_Adik" name="txtNama_Adik" placeholder="Masukkan Nama Adik" required autocomplete="nama_adik">
         </label>
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>

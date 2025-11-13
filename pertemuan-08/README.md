@@ -8,5 +8,6 @@ Hari Ini Kmais uts sebagai berikut:
 <ol>
   <li>download+extract pertemuan 08</li>
   <li>menginput file ke proses php<li>
+  <li>membuat section di atas section about<li>
   <li>styling data mahasiswa<li>
 </ol>
