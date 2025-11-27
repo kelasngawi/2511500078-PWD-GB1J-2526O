@@ -17,4 +17,5 @@
   <LI>Tambahkan baris kode baru setelah baris Tentang Saya</h2>
   <li>hapus section tentang saya<li>
   <li>membuat folder baru</li>
+  <li>menambahkan kode baru di fungsi php</li>
 </ol>
