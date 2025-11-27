@@ -125,7 +125,7 @@ endif;
         <strong><?= $metadata["label"] ?></strong>
         <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
         <?= $metadata["suffix"] ?>
-    </p>
+    </p>s
 <?php endforeach; ?>
     </section>
 
