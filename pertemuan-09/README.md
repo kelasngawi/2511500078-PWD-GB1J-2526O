@@ -19,4 +19,5 @@
   <li>membuat folder baru</li>
   <li>menambahkan kode baru di fungsi php</li>
    <li>menambahkan kode baru di fungsi php</li>
+   <li>hapus baris 123-129 dan gantikan kode nya</li>
 </ol>
