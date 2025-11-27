@@ -20,4 +20,5 @@
   <li>menambahkan kode baru di fungsi php</li>
    <li>menambahkan kode baru di fungsi php</li>
    <li>hapus baris 123-129 dan gantikan kode nya</li>
+   <li>menambhakan kode fungsi.php dgn kode require_once di index.pHP</li>
 </ol>
