@@ -104,7 +104,7 @@ endif;
     <?php
     $biodata = $_SESSION["biodata"] ?? [];
 
-    $fieldconfig = [
+    $fieldConfig = [
       "nim "=> ["label" => "NIM:", "suffix" => ""],
       "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526;"],
       "tempat" => ["label" => "Tempat Lahir:", "suffix"=> ""],
@@ -125,7 +125,7 @@ endif;
         <strong><?= $metadata["label"] ?></strong>
         <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
         <?= $metadata["suffix"] ?>
-    </p>s
+    </p>
 <?php endforeach; ?>
     </section>
 
