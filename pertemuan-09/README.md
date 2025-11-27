@@ -14,4 +14,5 @@
   <li>modif baris 10-19</li>
   <li>modif baris 23-32</li>
   <li>mengisi sesion biodata</li>
+  <LI>Tambahkan baris kode baru setelah baris Tentang Saya</h2>
 </ol>
