@@ -16,4 +16,5 @@
   <li>mengisi sesion biodata</li>
   <LI>Tambahkan baris kode baru setelah baris Tentang Saya</h2>
   <li>hapus section tentang saya<li>
+  <li>membuat folder baru</li>
 </ol>
