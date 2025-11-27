@@ -18,4 +18,5 @@
   <li>hapus section tentang saya<li>
   <li>membuat folder baru</li>
   <li>menambahkan kode baru di fungsi php</li>
+   <li>menambahkan kode baru di fungsi php</li>
 </ol>
