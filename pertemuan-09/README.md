@@ -13,4 +13,5 @@
   <li>echo session ke nilai label section contact selesai</li>
   <li>modif baris 10-19</li>
   <li>modif baris 23-32</li>
+  <li>mengisi sesion biodata</li>
 </ol>
