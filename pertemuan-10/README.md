@@ -9,3 +9,5 @@ Hari Ini Kmais uts sebagai berikut:
   <li>download+extract pertemuan 10</li>
   <li>membuat file baru di pertemuan 10 koneksi.php<li>
   <li>menginput kode di koneksi.php<li>
+  <li>menambhakan phpmyadmin<li>
+  <LI>memasukkan kode di phpmyadmin<li>
