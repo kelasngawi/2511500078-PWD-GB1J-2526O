@@ -13,3 +13,6 @@ Hari Ini Kmais uts sebagai berikut:
   <LI>memasukkan kode di phpmyadmin<li>
   <li>membuat file baru read.php dan memasukkan kode di read.php<li>
   <li>menginput data di table tamu<li>
+  <li>mencopy red.php menjadi read_inc.php<li>
+  <li>meninput kode di read-inc.php<li>
+<ol>
