@@ -15,4 +15,5 @@ Hari Ini Kmais uts sebagai berikut:
   <li>menginput data di table tamu<li>
   <li>mencopy red.php menjadi read_inc.php<li>
   <li>meninput kode di read-inc.php<li>
+  <li>mengganti baris 146 di index php agar bisa membaca kode di read_inc.php<li>
 <ol>
