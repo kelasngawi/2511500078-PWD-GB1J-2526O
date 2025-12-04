@@ -7,14 +7,14 @@ NAMA : Ade putra<br>
 Hari Ini Kmais uts sebagai berikut:
 <ol>
   <li>download+extract pertemuan 10</li>
-  <li>membuat file baru di pertemuan 10 koneksi.php<li>
-  <li>menginput kode di koneksi.php<li>
-  <li>menambhakan phpmyadmin<li>
-  <LI>memasukkan kode di phpmyadmin<li>
-  <li>membuat file baru read.php dan memasukkan kode di read.php<li>
-  <li>menginput data di table tamu<li>
-  <li>mencopy red.php menjadi read_inc.php<li>
-  <li>meninput kode di read-inc.php<li>
-  <li>mengganti baris 146 di index php agar bisa membaca kode di read_inc.php<li>
-  <li>menghapus baris 131-141 di index.php karena sudah tidak di perlukan<li>
-<ol>
+  <li>membuat file baru di pertemuan 10 koneksi.php</li>
+  <li>menginput kode di koneksi.php</li>
+  <li>menambhakan phpmyadmin</li>
+  <LI>memasukkan kode di phpmyadmin</li>
+  <li>membuat file baru read.php dan memasukkan kode di read.php</li>
+  <li>menginput data di table tamu</li>
+  <li>mencopy red.php menjadi read_inc.php</li>
+  <li>meninput kode di read-inc.php</li>
+  <li>mengganti baris 146 di index php agar bisa membaca kode di read_inc.php</li>
+  <li>menghapus baris 131-141 di index.php karena sudah tidak di perlukan</li>
+</ol>
