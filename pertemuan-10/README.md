@@ -12,3 +12,4 @@ Hari Ini Kmais uts sebagai berikut:
   <li>menambhakan phpmyadmin<li>
   <LI>memasukkan kode di phpmyadmin<li>
   <li>membuat file baru read.php dan memasukkan kode di read.php<li>
+  <li>menginput data di table tamu<li>
