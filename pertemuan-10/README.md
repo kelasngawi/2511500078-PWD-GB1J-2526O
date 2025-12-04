@@ -11,3 +11,4 @@ Hari Ini Kmais uts sebagai berikut:
   <li>menginput kode di koneksi.php<li>
   <li>menambhakan phpmyadmin<li>
   <LI>memasukkan kode di phpmyadmin<li>
+  <li>membuat file baru read.php dan memasukkan kode di read.php<li>
