@@ -10,6 +10,9 @@ $arrContact = [
   "email" => $_POST["txtEmail"] ?? "",
   "pesan" => $_POST["txtPesan"] ?? ""
 ];
+$nama = bersihkan($_POST["txtNama"] ?? "");
+$email = bersihkan($_POST["txtEmail"] ?? "");
+$pesan = bersihkan($_POST["txtPesan"] ?? "");
 $_SESSION["contact"] = $arrContact;
 
 $arrBiodata = [

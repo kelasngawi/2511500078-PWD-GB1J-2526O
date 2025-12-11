@@ -10,4 +10,5 @@ Hari Ini Kmais uts sebagai berikut:
   <li> tambahkan KODE baru ke fungsi.php</li>
   <li> tambahkan KODE baru ke index.php</li>
   <li> tambahkan kode baru di proses.php</li>
+  <LI> ambil data $S_POST di proses.php</li>
 </ol>
