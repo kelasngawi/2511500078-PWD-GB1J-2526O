@@ -7,6 +7,7 @@ NAMA : Ade putra<br>
 Hari Ini Kmais uts sebagai berikut:
 <ol>
   <li>copy file hasil pertemuan 10 ke 11</li>
-  <li> tambahkan file baru ke fungsi.php</li>
-  <li> tambahkan file baru ke index.php</li>
+  <li> tambahkan KODE baru ke fungsi.php</li>
+  <li> tambahkan KODE baru ke index.php</li>
+  <li> tambahkan kode baru di proses.php</li>
 </ol>
