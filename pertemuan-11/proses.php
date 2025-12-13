@@ -17,8 +17,12 @@ $nama = bersihkan($_POST["txtNama"] ?? "");
 $email = bersihkan($_POST["txtEmail"] ?? "");
 $pesan = bersihkan($_POST["txtPesan"] ?? "");
 $_SESSION["contact"] = $arrContact;
+$captcha = $_POST['captcha'] ?? '';
 
 $errors = [];
+if ($captcha !== '5') {
+  $errors[] = 'Captcha salah. Silahkan coba lagi.';
+}
 
 if ($nama === '') {
   $errors[] = 'Nama wajib di isi.';

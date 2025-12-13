@@ -16,6 +16,7 @@ if (!$q) {
 } else {
   while ($row = mysqli_fetch_assoc($q)) {
     $contact = [
+      "no" => $no++,
       "nama" => $row['cnama'],
       "email" => $row['cemail'],
       "pesan" => $row['cpesan']
