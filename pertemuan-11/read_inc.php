@@ -1,10 +1,12 @@
 <?php
-require 'koneksi.php';
+require_once __DIR__ . '/fungsi.php';
+require_once __DIR__ . '/koneksi.php';
 
 $fieldContact = [
   "nama" => ["label" => "Nama:", "suffix" => ""],
   "email" => ["label" => "Email:", "suffix" => ""],
-  "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
+  "pesan" => ["label" => "Pesan Anda:", "suffix" => ""],
+  "created_at" => ["label" => "Dikirim:", "suffix" => ""]
 ];
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
@@ -16,10 +18,10 @@ if (!$q) {
 } else {
   while ($row = mysqli_fetch_assoc($q)) {
     $contact = [
-      "no" => $no++,
       "nama" => $row['cnama'],
       "email" => $row['cemail'],
-      "pesan" => $row['cpesan']
+      "pesan" => $row['cpesan'],
+      "created_at" => formatTanggal($row['created_at'])
     ];
     echo tampilkanBiodata($fieldContact, $contact);
   }

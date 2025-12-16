@@ -116,11 +116,11 @@ require_once __DIR__ . '/fungsi.php';
 
     unset($_SESSION["flash_sukses"], $_SESSION["flash_error"], $_SESSION["old"]);
     ?>
-
+ 
     <section id="contact">
       <h2>Kontak Kami</h2>
 
-      <?php if (!empty($flash_sukses)) : ?>
+<?php if (!empty($flash_sukses)) : ?>
         <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
           <?= $flash_sukses; ?>
         </div>
@@ -131,10 +131,10 @@ require_once __DIR__ . '/fungsi.php';
           <?= $flash_error; ?>
         </div>
       <?php endif; ?>
-      
+
       <form action="proses.php" method="POST">
 
-        <label for="txtNama"><span>Nama:</span>
+       <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name"
             value="<?= isset($old['name']) ? htmlspecialchars($old['nama']) : '' ?>">
         </label>
@@ -150,7 +150,7 @@ require_once __DIR__ . '/fungsi.php';
           <small id="charCount">0/200 karakter</small>
         </label>
 
-      <label>
+         <label>
       <span>Captcha: 2 + 3 = ?</span>
       <input type="text" name="captcha" placeholder="Jawaban" required>
       </label>
@@ -158,16 +158,6 @@ require_once __DIR__ . '/fungsi.php';
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-
-      <?php
-      $contact = $_SESSION["contact"] ?? [];
-
-      $fieldContact = [
-        "nama" => ["label" => "Nama:", "suffix" => ""],
-        "email" => ["label" => "Email:", "suffix" => ""],
-        "pesan" => ["label" => "Pesan Anda:", "suffix" => ""]
-      ];
-      ?>
 
       <br>
       <hr>

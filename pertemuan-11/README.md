@@ -11,4 +11,7 @@ Hari Ini Kmais uts sebagai berikut:
   <li> tambahkan KODE baru ke index.php</li>
   <li> tambahkan kode baru di proses.php</li>
   <LI> ambil data $S_POST di proses.php</li>
+  <li>membuat no di read.php</li>
+  <li>membuat capcha sederhana</li>
+  <li>membuat waktu pengiriman pesan</li>
 </ol>
