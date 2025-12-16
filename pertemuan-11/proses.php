@@ -26,6 +26,8 @@ if ($captcha !== '5') {
 
 if ($nama === '') {
   $errors[] = 'Nama wajib di isi.';
+  } elseif (strlen($nama) < 3) {
+  $errors[] = 'Nama minimal 3 karakter.';
 }
 
 if ($email === '') {
@@ -36,6 +38,8 @@ if ($email === '') {
 
 if ($pesan === '') {
   $errors[] = 'Pesan wajib di isi.';
+  } elseif (strlen($pesan) < 10) {
+  $errors[] = 'Pesan minimal 10 karakter.';
 }
 
 
