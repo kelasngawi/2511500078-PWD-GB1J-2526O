@@ -11,14 +11,14 @@ if (!$q) {
 ?>
 
 <?php 
- $flash_sukses = $_SESSION['flash_sukses'] ?? '';
+ $flash_success = $_SESSION['flash_success'] ?? '';
  $flash_error = $_SESSION['flash_error'] ?? '';
 
-  unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
+  unset($_SESSION['flash_success'], $_SESSION['flash_error']);
   ?>
-<?php if (empty($flash_sukses) === false) : ?>
+<?php if (empty($flash_success) === false) : ?>
   <div style="padding: 10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
-    <?= $flash_sukses ?>
+    <?= $flash_success ?>
   </div>
 <?php endif; ?>
 
