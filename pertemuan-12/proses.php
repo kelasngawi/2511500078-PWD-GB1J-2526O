@@ -42,12 +42,7 @@ if ($pesan === '') {
   $errors[] = 'Pesan minimal 10 karakter.';
 }
 
-
-
-
-
-
-if (!empty($errors)) {
+ if (!empty($errors)) {
   $_SESSION['old'] = [
     'nama' => $nama,
     'email' => $email,
