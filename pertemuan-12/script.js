@@ -174,3 +174,39 @@ window.addEventListener("resize", () => {
         if (target) alignErrorMessage(small, target);
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const list = document.getElementById("listTamu");
+    const btn = document.getElementById("btnToggle");
+
+    if (!list || !btn) return;
+
+    const LIMIT_HEIGHT = 150; // tinggi awal (lebih sedikit)
+
+    // set kondisi awal
+    list.style.maxHeight = LIMIT_HEIGHT + "px";
+    list.style.overflow = "hidden";
+
+    // jika isi tidak lebih tinggi dari limit, tombol disembunyikan
+    if (list.scrollHeight <= LIMIT_HEIGHT + 10) {
+        btn.style.display = "none";
+        list.style.maxHeight = "none";
+        list.style.overflow = "visible";
+        return;
+    }
+
+    let opened = false;
+
+    btn.addEventListener("click", function () {
+        if (!opened) {
+            list.style.maxHeight = list.scrollHeight + "px";
+            list.style.overflow = "visible";
+            btn.textContent = "Sembunyikan";
+            opened = true;
+        } else {
+            list.style.maxHeight = LIMIT_HEIGHT + "px";
+            list.style.overflow = "hidden";
+            btn.textContent = "Tampilkan lebih banyak";
+            opened = false;
+        }
+    });
+});

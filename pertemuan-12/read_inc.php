@@ -9,7 +9,7 @@ $fieldContact = [
   "created_at" => ["label" => "Dikirim:", "suffix" => ""]
 ];
 
-$sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
+$sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC ";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
   echo "<p>Gagal membaca data tamu: " . htmlspecialchars(mysqli_error($conn)) . "</p>";

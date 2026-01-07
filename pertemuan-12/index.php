@@ -162,7 +162,11 @@ require_once __DIR__ . '/fungsi.php';
       <br>
       <hr>
       <h2>Yang menghubungi kami</h2>
-      <?php include 'read_inc.php'; ?>
+      <div id="ListTamu">
+      <?php include 'read_inc.php'; 
+      ?>
+      </div>  
+      </button>
     </section>
   </main>
 
