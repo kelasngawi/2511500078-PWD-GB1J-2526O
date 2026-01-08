@@ -7,14 +7,12 @@ $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
 ]);
 
-// VALIDASI CID (FIX)
 if (!$cid) {
     $_SESSION['flash_error'] = "akses tidak valid.";
     redirect_ke('read.php');
     exit;
 }
 
-// QUERY DATA
 $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan FROM tbl_tamu WHERE cid = ? LIMIT 1");
 if (!$stmt) {
     $_SESSION['flash_error'] = "Query gagal: " . mysqli_error($conn);
@@ -28,24 +26,20 @@ $res = mysqli_stmt_get_result($stmt);
 $row = mysqli_fetch_assoc($res);
 mysqli_stmt_close($stmt);
 
-// DATA TIDAK ADA
 if (!$row) {
     $_SESSION['flash_error'] = "record tidak ditemukan.";
     redirect_ke('read.php');
     exit;
 }
 
-// DATA DEFAULT
 $nama  = $row['cnama'];
 $email = $row['cemail'];
 $pesan = $row['cpesan'];
 
-// FLASH & OLD INPUT
 $flash_error = $_SESSION['flash_error'] ?? '';
 $old = $_SESSION['old'] ?? [];
 unset($_SESSION['flash_error'], $_SESSION['old']);
 
-// JIKA ADA DATA LAMA
 if (!empty($old)) {
     $nama  = $old['nama']  ?? $nama;
     $email = $old['email'] ?? $email;
