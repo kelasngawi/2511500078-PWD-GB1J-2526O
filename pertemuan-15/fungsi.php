@@ -17,8 +17,10 @@ function tidakKosong($str)
 
 function formatTanggal($tgl)
 {
-  return date("d M Y H:i:s", strtotime($tgl));
+    if ($tgl == '' || $tgl == null) return null;
+    return date("Y-m-d", strtotime($tgl)); // format MySQL DATE
 }
+
 
 function tampilkanBiodata($conf, $arr)
 {

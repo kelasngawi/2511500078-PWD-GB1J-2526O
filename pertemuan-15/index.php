@@ -1,6 +1,20 @@
 <?php
 session_start();
 require_once __DIR__ . '/fungsi.php';
+
+
+/* ===== FLASH BIODATA ===== */
+$flash_biodata = $_SESSION['flash_biodata'] ?? '';
+$flash_biodata_error = $_SESSION['flash_biodata_error'] ?? '';
+unset($_SESSION['flash_biodata'], $_SESSION['flash_biodata_error']);
+
+/* ===== FLASH CONTACT ===== */
+$flash_contact = $_SESSION['flash_contact'] ?? '';
+$flash_contact_error = $_SESSION['flash_contact_error'] ?? '';
+unset($_SESSION['flash_contact'], $_SESSION['flash_contact_error']);
+
+$old = $_SESSION['old'] ?? [];
+
 ?>
 
 <!DOCTYPE html>
@@ -40,6 +54,18 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
+      <?php if ($flash_biodata): ?>
+    <div style="padding:10px;margin-bottom:10px;background:#d4edda;color:#155724;border-radius:6px;">
+      <?= $flash_biodata ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($flash_biodata_error): ?>
+    <div style="padding:10px;margin-bottom:10px;background:#f8d7da;color:#721c24;border-radius:6px;">
+      <?= $flash_biodata_error ?>
+    </div>
+  <?php endif; ?>
+
       <form action="proses.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
@@ -55,7 +81,7 @@ require_once __DIR__ . '/fungsi.php';
         </label>
 
         <label for="txtTglLhr"><span>Tanggal Lahir:</span>
-          <input type="text" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir" required>
+          <input type="date" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir" required>
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
@@ -107,29 +133,29 @@ require_once __DIR__ . '/fungsi.php';
     <section id="about">
       <h2>Tentang Saya</h2>
       <?= tampilkanBiodata($fieldConfig, $biodata) ?>
+      
+      <?php if (!empty($biodata)): ?>
+    <a href="edit_biodata.php">✏️ Edit Biodata</a>
+  <?php endif; ?>
     </section>
 
     <?php
-    $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
-    $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
-    $old          = $_SESSION['old'] ?? []; #untuk nilai lama form
 
-    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']); #bersihkan 3 session ini
     ?>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
 
-      <?php if (!empty($flash_sukses)): ?>
-        <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
-          <?= $flash_sukses; ?>
-        </div>
-      <?php endif; ?>
+     <?php if ($flash_contact): ?>
+    <div style="padding:10px;margin-bottom:10px;background:#d4edda;color:#155724;border-radius:6px;">
+      <?= $flash_contact ?>
+    </div>
+  <?php endif; ?>
 
-      <?php if (!empty($flash_error)): ?>
-        <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $flash_error; ?>
-        </div>
+  <?php if ($flash_contact_error): ?>
+    <div style="padding:10px;margin-bottom:10px;background:#f8d7da;color:#721c24;border-radius:6px;">
+      <?= $flash_contact_error ?>
+    </div>
       <?php endif; ?>
 
       <form action="proses.php" method="POST">
