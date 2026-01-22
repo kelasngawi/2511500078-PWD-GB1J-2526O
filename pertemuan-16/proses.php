@@ -3,18 +3,13 @@ session_start();
 require __DIR__ . '/koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
-/* =========================
-   CEK METHOD
-========================= */
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
   redirect_ke('index.php');
   exit;
 }
 
-/* =========================
-   AMBIL & BERSIHKAN DATA FORM
-========================= */
+
 $kode   = bersihkan($_POST["txtKodePen"] ?? "");
 $nama   = bersihkan($_POST["txtNmPengunjung"] ?? "");
 $alamat = bersihkan($_POST["txtAlRmh"] ?? "");
@@ -26,9 +21,7 @@ $ortu   = bersihkan($_POST["txtNmOrtu"] ?? "");
 $pacar  = bersihkan($_POST["txtNmPacar"] ?? "");
 $mantan = bersihkan($_POST["txtNmMantan"] ?? "");
 
-/* =========================
-   VALIDASI WAJIB
-========================= */
+
 $errors = [];
 
 if ($kode === '')   $errors[] = 'Kode Pengunjung wajib diisi.';
@@ -42,9 +35,6 @@ if (!empty($errors)) {
   exit;
 }
 
-/* =========================
-   SIMPAN KE SESSION (ABOUT)
-========================= */
 $_SESSION['biodata'] = [
   "kodepen"   => $kode,
   "nama"      => $nama,
@@ -58,9 +48,6 @@ $_SESSION['biodata'] = [
   "mantan"    => $mantan
 ];
 
-/* =========================
-   INSERT KE DATABASE
-========================= */
 $sql = "INSERT INTO tbl_pengunjung
 (Kode_Pengunjung, Nama_Pengunjung, Alamat_Rumah, Tanggal_Kunjungan,
  Hobi, Asal_SLTA, Pekerjaan, Nama_Orang_Tua, Nama_Pacar, Nama_Mantan)
@@ -101,10 +88,6 @@ exit;
 
 mysqli_stmt_close($stmt);
 
-
-/* =================================================
-   PROSES FORM KONTAK
-================================================= */
 if (isset($_POST['txtNama'])) {
 
   $nama    = bersihkan($_POST['txtNama']);
@@ -125,8 +108,8 @@ if (isset($_POST['txtNama'])) {
     redirect_ke('index.php#contact');
     exit;
   }
-
-  $sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";    
+  $sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";                         
   $stmt = mysqli_prepare($conn, $sql);
   mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
 
