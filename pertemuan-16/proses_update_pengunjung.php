@@ -3,18 +3,13 @@ session_start();
 require 'koneksi.php';
 require 'fungsi.php';
 
-/* ===============================
-   VALIDASI METHOD
-================================ */
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
   redirect_ke('tbl.php');
   exit;
 }
 
-/* ===============================
-   VALIDASI CID
-================================ */
 $cid = filter_input(INPUT_POST, 'cid', FILTER_VALIDATE_INT, [
   'options' => ['min_range' => 1]
 ]);
@@ -25,9 +20,6 @@ if (!$cid) {
   exit;
 }
 
-/* ===============================
-   AMBIL & BERSIHKAN INPUT
-================================ */
 $kode   = bersihkan($_POST['txtKodePen'] ?? '');
 $nama   = bersihkan($_POST['txtNmPengunjung'] ?? '');
 $alamat = bersihkan($_POST['txtAlRmh'] ?? '');
@@ -39,9 +31,6 @@ $ortu   = bersihkan($_POST['txtNmOrtu'] ?? '');
 $pacar  = bersihkan($_POST['txtNmPacar'] ?? '');
 $mantan = bersihkan($_POST['txtNmMantan'] ?? '');
 
-/* ===============================
-   VALIDASI WAJIB
-================================ */
 $errors = [];
 
 if ($kode === '')  $errors[] = 'Kode Pengunjung wajib diisi.';
@@ -55,9 +44,6 @@ if (!empty($errors)) {
   exit;
 }
 
-/* ===============================
-   QUERY UPDATE
-================================ */
 $stmt = mysqli_prepare($conn, "
   UPDATE tbl_pengunjung SET
     Kode_Pengunjung   = ?,
@@ -79,9 +65,6 @@ if (!$stmt) {
   exit;
 }
 
-/* ===============================
-   BIND & EKSEKUSI
-================================ */
 mysqli_stmt_bind_param(
   $stmt,
   "ssssssssssi",

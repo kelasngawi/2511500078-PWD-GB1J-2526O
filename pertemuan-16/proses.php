@@ -90,12 +90,14 @@ mysqli_stmt_bind_param(
 );
 
 if (mysqli_stmt_execute($stmt)) {
-  $_SESSION['flash_sukses'] = 'Data pengunjung berhasil disimpan.';
-  redirect_ke('index.php#about');
+  $_SESSION['flash_biodata'] = 'Data pengunjung berhasil disimpan.';
+  redirect_ke('index.php#biodata');
 } else {
-  $_SESSION['flash_error'] = 'Data gagal disimpan.';
+  $_SESSION['flash_biodata_error'] = 'Data gagal disimpan.';
   redirect_ke('index.php#biodata');
 }
+exit;
+
 
 mysqli_stmt_close($stmt);
 
