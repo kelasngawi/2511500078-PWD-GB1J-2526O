@@ -35,7 +35,7 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
     <th>Aksi</th>
     <th>Kode Pengunjung</th>
     <th>Nama Pengunjung</th>
-    <th>Alamat</th>
+    <th>Alamat Rumah</th>
     <th>Tanggal Kunjungan</th>
     <th>Hobi</th>
     <th>Asal SLTA</th>
@@ -53,21 +53,22 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
     <td>
       <a href="edit_pengunjung.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
       |
-      <a onclick="return confirm('Hapus data <?= htmlspecialchars($row['nama_pengunjung']); ?> ?')"
+      <a onclick="return confirm('Hapus data <?= htmlspecialchars($row['Nama_Pengunjung']); ?> ?')"
          href="proses_delete_pengunjung.php?cid=<?= (int)$row['cid']; ?>">
         Delete
       </a>
     </td>
-    <td><?= htmlspecialchars($row['kode_pengunjung']); ?></td>
-    <td><?= htmlspecialchars($row['nama_pengunjung']); ?></td>
-    <td><?= htmlspecialchars($row['alamat']); ?></td>
-    <td><?= formatTanggal($row['tanggal_kunjungan']); ?></td>
-    <td><?= htmlspecialchars($row['hobi']); ?></td>
-    <td><?= htmlspecialchars($row['asal_slta']); ?></td>
-    <td><?= htmlspecialchars($row['pekerjaan']); ?></td>
-    <td><?= htmlspecialchars($row['nama_ortu']); ?></td>
-    <td><?= htmlspecialchars($row['nama_pacar']); ?></td>
-    <td><?= htmlspecialchars($row['nama_mantan']); ?></td>
+
+    <td><?= htmlspecialchars($row['Kode_Pengunjung']); ?></td>
+    <td><?= htmlspecialchars($row['Nama_Pengunjung']); ?></td>
+    <td><?= htmlspecialchars($row['Alamat_Rumah']); ?></td>
+    <td><?= formatTanggal($row['Tanggal_Kunjungan']); ?></td>
+    <td><?= htmlspecialchars($row['Hobi']); ?></td>
+    <td><?= htmlspecialchars($row['Asal_SLTA']); ?></td>
+    <td><?= htmlspecialchars($row['Pekerjaan']); ?></td>
+    <td><?= htmlspecialchars($row['Nama_Orang_Tua']); ?></td>
+    <td><?= htmlspecialchars($row['Nama_Pacar']); ?></td>
+    <td><?= htmlspecialchars($row['Nama_Mantan']); ?></td>
     <td><?= formatTanggal($row['created_at']); ?></td>
   </tr>
 <?php endwhile; ?>
