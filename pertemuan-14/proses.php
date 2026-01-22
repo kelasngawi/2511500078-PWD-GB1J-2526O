@@ -14,7 +14,7 @@ if (isset($_POST['txtNim'])) {
   $pekerjaan = bersihkan($_POST['txtKerja'] ?? '');
   $ortu      = bersihkan($_POST['txtNmOrtu'] ?? '');
   $kakak     = bersihkan($_POST['txtNmKakak'] ?? '');
-  $adik      = bersihkan($_POST['txtNmAdik'] ?? '');
+  $adik      = bersihkan($_POST['txtNmAdek'] ?? '');
 
   if ($nim === '' || $nama === '') {
     $_SESSION['flash_biodata_error'] = "NIM dan Nama Lengkap wajib diisi!";
@@ -39,7 +39,7 @@ if (isset($_POST['txtNim'])) {
   $stmt = mysqli_prepare($conn, $sql);
   mysqli_stmt_bind_param($stmt, "ssssssssss",
     $nim, $nama, $tempat, $tanggal, $hobi,
-    $pasangan, $pekerjaan, $ortu, $kakak, $adek
+    $pasangan, $pekerjaan, $ortu, $kakak, $adik
   );
 
   if (mysqli_stmt_execute($stmt)) {

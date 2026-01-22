@@ -104,8 +104,8 @@ $old = $_SESSION['old'] ?? [];
           <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak" required>
         </label>
 
-        <label for="txtNmAdik"><span>Nama Adik:</span>
-          <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik" required>
+        <label for="txtNmAdek"><span>Nama Adek:</span>
+          <input type="text" id="txtNmAdek" name="txtNmAdek" placeholder="Masukkan Nama Adek" required>
         </label>
 
         <button type="submit">Kirim</button>

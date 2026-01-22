@@ -34,10 +34,9 @@
       Redirect balik ke read.php dan tampilkan info sukses.
     */
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah dihapus.';
-  } else { #jika gagal, simpan kembali old value dan tampilkan error umum
+  } else { 
     $_SESSION['flash_error'] = 'Data gagal dihapus. Silakan coba lagi.';
   }
-  #tutup statement
   mysqli_stmt_close($stmt);
 
   redirect_ke('read.php');

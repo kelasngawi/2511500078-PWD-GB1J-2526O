@@ -3,41 +3,14 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  /*
-    Ambil nilai cid dari GET dan lakukan validasi untuk 
-    mengecek cid harus angka dan lebih besar dari 0 (> 0).
-    'options' => ['min_range' => 1] artinya cid harus ≥ 1 
-    (bukan 0, bahkan bukan negatif, bukan huruf, bukan HTML).
-  */
   $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
   ]);
-  /*
-    Skrip di atas cara penulisan lamanya adalah:
-    $cid = $_GET['cid'] ?? '';
-    $cid = (int)$cid;
-
-    Cara lama seperti di atas akan mengambil data mentah 
-    kemudian validasi dilakukan secara terpisah, sehingga 
-    rawan lupa validasi. Untuk input dari GET atau POST, 
-    filter_input() lebih disarankan daripada $_GET atau $_POST.
-  */
-
-  /*
-    Cek apakah $cid bernilai valid:
-    Kalau $cid tidak valid, maka jangan lanjutkan proses, 
-    kembalikan pengguna ke halaman awal (read.php) sembari 
-    mengirim penanda error.
-  */
+ 
   if (!$cid) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('read.php');
   }
-
-  /*
-    Ambil data lama dari DB menggunakan prepared statement, 
-    jika ada kesalahan, tampilkan penanda error.
-  */
   $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan 
                                     FROM tbl_tamu WHERE cid = ? LIMIT 1");
   if (!$stmt) {
